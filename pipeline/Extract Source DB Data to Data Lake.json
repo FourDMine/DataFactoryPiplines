@@ -731,7 +731,7 @@
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
 							"quoteAllText": true,
-							"fileExtension": ".csv"
+							"fileExtension": ".txt"
 						}
 					},
 					"enableStaging": false,
@@ -745,9 +745,9 @@
 									"physicalType": "int"
 								},
 								"sink": {
+									"name": "loan_id",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 1
+									"physicalType": "String"
 								}
 							},
 							{
@@ -757,9 +757,9 @@
 									"physicalType": "int"
 								},
 								"sink": {
+									"name": "account_id",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 2
+									"physicalType": "String"
 								}
 							},
 							{
@@ -769,9 +769,9 @@
 									"physicalType": "date"
 								},
 								"sink": {
+									"name": "date",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 3
+									"physicalType": "String"
 								}
 							},
 							{
@@ -781,9 +781,9 @@
 									"physicalType": "int"
 								},
 								"sink": {
+									"name": "amount",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 4
+									"physicalType": "String"
 								}
 							},
 							{
@@ -793,9 +793,9 @@
 									"physicalType": "int"
 								},
 								"sink": {
+									"name": "duration",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 5
+									"physicalType": "String"
 								}
 							},
 							{
@@ -807,9 +807,9 @@
 									"precision": 7
 								},
 								"sink": {
+									"name": "payments",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 6
+									"physicalType": "String"
 								}
 							},
 							{
@@ -819,9 +819,9 @@
 									"physicalType": "varchar"
 								},
 								"sink": {
+									"name": "status",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 7
+									"physicalType": "String"
 								}
 							}
 						],
@@ -887,12 +887,12 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "loan_id",
+									"name": "order_id",
 									"type": "Int32",
 									"physicalType": "int"
 								},
 								"sink": {
-									"name": "loan_id",
+									"name": "order_id",
 									"type": "String",
 									"physicalType": "String"
 								}
@@ -911,62 +911,50 @@
 							},
 							{
 								"source": {
-									"name": "date",
-									"type": "DateTime",
-									"physicalType": "date"
-								},
-								"sink": {
-									"name": "date",
-									"type": "String",
-									"physicalType": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "amount",
-									"type": "Int32",
-									"physicalType": "int"
-								},
-								"sink": {
-									"name": "amount",
-									"type": "String",
-									"physicalType": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "duration",
-									"type": "Int32",
-									"physicalType": "int"
-								},
-								"sink": {
-									"name": "duration",
-									"type": "String",
-									"physicalType": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "payments",
-									"type": "Decimal",
-									"physicalType": "decimal",
-									"scale": 2,
-									"precision": 7
-								},
-								"sink": {
-									"name": "payments",
-									"type": "String",
-									"physicalType": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "status",
+									"name": "bank_to",
 									"type": "String",
 									"physicalType": "varchar"
 								},
 								"sink": {
-									"name": "status",
+									"name": "bank_to",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "account_to",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "account_to",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "amount",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 2,
+									"precision": 8
+								},
+								"sink": {
+									"name": "amount",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "k_symbol",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"name": "k_symbol",
 									"type": "String",
 									"physicalType": "String"
 								}

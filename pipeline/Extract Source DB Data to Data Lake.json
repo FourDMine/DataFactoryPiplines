@@ -236,7 +236,7 @@
 				]
 			},
 			{
-				"name": "Extract dData to Data Lake",
+				"name": "Extract Client Data to Data Lake",
 				"type": "Copy",
 				"dependsOn": [
 					{

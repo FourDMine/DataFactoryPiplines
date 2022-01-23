@@ -484,216 +484,169 @@
 							{
 								"source": {
 									"name": "A1",
-									"type": "Int32",
-									"physicalType": "int"
+									"type": "Int32"
 								},
 								"sink": {
 									"name": "A1",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "A2",
-									"type": "String",
-									"physicalType": "varchar"
+									"type": "String"
 								},
 								"sink": {
 									"name": "A2",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "A3",
-									"type": "String",
-									"physicalType": "varchar"
+									"type": "String"
 								},
 								"sink": {
 									"name": "A3",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "A4",
-									"type": "Int32",
-									"physicalType": "int"
+									"type": "Int32"
 								},
 								"sink": {
 									"name": "A4",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "A5",
-									"type": "Int32",
-									"physicalType": "int"
+									"type": "Int32"
 								},
 								"sink": {
 									"name": "A5",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "A6",
-									"type": "Int32",
-									"physicalType": "int"
+									"type": "Int32"
 								},
 								"sink": {
 									"name": "A6",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "A7",
-									"type": "Int32",
-									"physicalType": "int"
+									"type": "Int32"
 								},
 								"sink": {
 									"name": "A7",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "A8",
-									"type": "Int32",
-									"physicalType": "int"
+									"type": "Int32"
 								},
 								"sink": {
 									"name": "A8",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "A9",
-									"type": "Int32",
-									"physicalType": "int"
+									"type": "Int32"
 								},
 								"sink": {
 									"name": "A9",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "A10",
-									"type": "Decimal",
-									"physicalType": "decimal",
-									"scale": 1,
-									"precision": 5
+									"type": "Decimal"
 								},
 								"sink": {
 									"name": "A10",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "A11",
-									"type": "Int32",
-									"physicalType": "int"
+									"type": "Int32"
 								},
 								"sink": {
 									"name": "A11",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "A12",
-									"type": "String",
-									"physicalType": "varchar"
+									"type": "String"
 								},
 								"sink": {
 									"name": "A12",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "A13",
-									"type": "Decimal",
-									"physicalType": "decimal",
-									"scale": 2,
-									"precision": 4
+									"type": "Decimal"
 								},
 								"sink": {
 									"name": "A13",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "A14",
-									"type": "Int32",
-									"physicalType": "int"
+									"type": "Int32"
 								},
 								"sink": {
 									"name": "A14",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "A15",
-									"type": "String",
-									"physicalType": "varchar"
+									"type": "String"
 								},
 								"sink": {
 									"name": "A15",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "A16",
-									"type": "Int32",
-									"physicalType": "int"
+									"type": "Int32"
 								},
 								"sink": {
 									"name": "A16",
-									"type": "String",
-									"physicalType": "String"
+									"type": "String"
 								}
 							}
-						],
-						"typeConversion": true,
-						"typeConversionSettings": {
-							"allowDataTruncation": true,
-							"treatBooleanAsNumber": false
-						}
+						]
 					}
 				},
 				"inputs": [
 					{
 						"referenceName": "district",
-						"type": "DatasetReference"
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "districsv",
 						"type": "DatasetReference"
 					}
 				]
@@ -976,6 +929,191 @@
 				"outputs": [
 					{
 						"referenceName": "orderscsv",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "Extract Trans Data to Data Lake",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "Extract Orders Data to Data Lake",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "AzureSqlSource",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".csv"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "trans_id",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"type": "String",
+									"physicalType": "String",
+									"ordinal": 1
+								}
+							},
+							{
+								"source": {
+									"name": "account_id",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"type": "String",
+									"physicalType": "String",
+									"ordinal": 2
+								}
+							},
+							{
+								"source": {
+									"name": "date",
+									"type": "DateTime",
+									"physicalType": "date"
+								},
+								"sink": {
+									"type": "String",
+									"physicalType": "String",
+									"ordinal": 3
+								}
+							},
+							{
+								"source": {
+									"name": "type",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"type": "String",
+									"physicalType": "String",
+									"ordinal": 4
+								}
+							},
+							{
+								"source": {
+									"name": "operation",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"type": "String",
+									"physicalType": "String",
+									"ordinal": 5
+								}
+							},
+							{
+								"source": {
+									"name": "amount",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 2,
+									"precision": 8
+								},
+								"sink": {
+									"type": "String",
+									"physicalType": "String",
+									"ordinal": 6
+								}
+							},
+							{
+								"source": {
+									"name": "balance",
+									"type": "Decimal",
+									"physicalType": "decimal",
+									"scale": 2,
+									"precision": 9
+								},
+								"sink": {
+									"type": "String",
+									"physicalType": "String",
+									"ordinal": 7
+								}
+							},
+							{
+								"source": {
+									"name": "k_symbol",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"type": "String",
+									"physicalType": "String",
+									"ordinal": 8
+								}
+							},
+							{
+								"source": {
+									"name": "bank",
+									"type": "String",
+									"physicalType": "varchar"
+								},
+								"sink": {
+									"type": "String",
+									"physicalType": "String",
+									"ordinal": 9
+								}
+							},
+							{
+								"source": {
+									"name": "account",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"type": "String",
+									"physicalType": "String",
+									"ordinal": 10
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "trans",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "transcsv",
 						"type": "DatasetReference"
 					}
 				]

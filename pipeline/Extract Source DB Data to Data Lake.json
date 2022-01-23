@@ -1,5 +1,5 @@
 {
-	"name": "Extract Account Data to Staging",
+	"name": "Extract Source DB Data to Data Lake",
 	"properties": {
 		"activities": [
 			{
@@ -127,7 +127,7 @@
 				]
 			},
 			{
-				"name": "Copy data1",
+				"name": "Extract Card Data to Data Lake",
 				"type": "Copy",
 				"dependsOn": [
 					{

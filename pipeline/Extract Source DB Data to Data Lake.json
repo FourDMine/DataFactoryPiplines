@@ -333,7 +333,7 @@
 				]
 			},
 			{
-				"name": "Extract Client Data to Data Lake_copy1",
+				"name": "Extract Disp Data to Data Lake",
 				"type": "Copy",
 				"dependsOn": [
 					{

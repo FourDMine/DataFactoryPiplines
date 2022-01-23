@@ -268,7 +268,7 @@
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
 							"quoteAllText": true,
-							"fileExtension": ".csv"
+							"fileExtension": ".txt"
 						}
 					},
 					"enableStaging": false,
@@ -282,9 +282,9 @@
 									"physicalType": "int"
 								},
 								"sink": {
+									"name": "client_id",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 1
+									"physicalType": "String"
 								}
 							},
 							{
@@ -294,9 +294,9 @@
 									"physicalType": "int"
 								},
 								"sink": {
+									"name": "birth_number",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 2
+									"physicalType": "String"
 								}
 							},
 							{
@@ -306,9 +306,9 @@
 									"physicalType": "int"
 								},
 								"sink": {
+									"name": "district_id",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 3
+									"physicalType": "String"
 								}
 							}
 						],

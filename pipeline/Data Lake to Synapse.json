@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "District Data to Synapse",
+				"name": "District Data to Synapse_copy1",
 				"type": "ExecuteDataFlow",
 				"dependsOn": [],
 				"policy": {
@@ -16,45 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataflow": {
-						"referenceName": "DistrictData_DataFlow",
-						"type": "DataFlowReference"
-					},
-					"staging": {
-						"linkedService": {
-							"referenceName": "BankDataLake",
-							"type": "LinkedServiceReference"
-						},
-						"folderPath": "staging"
-					},
-					"compute": {
-						"coreCount": 8,
-						"computeType": "General"
-					},
-					"traceLevel": "Fine"
-				}
-			},
-			{
-				"name": "District Data to Synapse_copy1",
-				"type": "ExecuteDataFlow",
-				"dependsOn": [
-					{
-						"activity": "District Data to Synapse",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"policy": {
-					"timeout": "1.00:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"dataflow": {
-						"referenceName": "dataflow1",
+						"referenceName": "LoanData_DataFlow",
 						"type": "DataFlowReference"
 					},
 					"staging": {

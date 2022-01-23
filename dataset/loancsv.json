@@ -1,5 +1,5 @@
 {
-	"name": "dispcsv",
+	"name": "loancsv",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "BankDataLake",
@@ -9,12 +9,10 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobFSLocation",
-				"fileSystem": "outputfolder"
+				"type": "AzureBlobFSLocation"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
-			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
 		"schema": []

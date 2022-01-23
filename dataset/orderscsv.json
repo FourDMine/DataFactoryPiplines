@@ -1,5 +1,5 @@
 {
-	"name": "dispcsv",
+	"name": "orderscsv",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "BankDataLake",

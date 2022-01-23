@@ -17,23 +17,6 @@
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": [
-			{
-				"name": "1",
-				"type": "String"
-			},
-			{
-				"name": "18",
-				"type": "String"
-			},
-			{
-				"name": "POPLATEK MESICNE",
-				"type": "String"
-			},
-			{
-				"name": "1995-03-24 00:00:00.0000000",
-				"type": "String"
-			}
-		]
+		"schema": []
 	}
 }

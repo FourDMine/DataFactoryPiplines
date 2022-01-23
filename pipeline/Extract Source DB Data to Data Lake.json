@@ -488,7 +488,7 @@
 								},
 								"sink": {
 									"name": "A1",
-									"type": "String"
+									"type": "Int32"
 								}
 							},
 							{
@@ -518,7 +518,7 @@
 								},
 								"sink": {
 									"name": "A4",
-									"type": "String"
+									"type": "Int32"
 								}
 							},
 							{
@@ -528,7 +528,7 @@
 								},
 								"sink": {
 									"name": "A5",
-									"type": "String"
+									"type": "Int32"
 								}
 							},
 							{
@@ -538,7 +538,7 @@
 								},
 								"sink": {
 									"name": "A6",
-									"type": "String"
+									"type": "Int32"
 								}
 							},
 							{
@@ -548,7 +548,7 @@
 								},
 								"sink": {
 									"name": "A7",
-									"type": "String"
+									"type": "Int32"
 								}
 							},
 							{
@@ -558,7 +558,7 @@
 								},
 								"sink": {
 									"name": "A8",
-									"type": "String"
+									"type": "Int32"
 								}
 							},
 							{
@@ -568,7 +568,7 @@
 								},
 								"sink": {
 									"name": "A9",
-									"type": "String"
+									"type": "Int32"
 								}
 							},
 							{
@@ -578,7 +578,7 @@
 								},
 								"sink": {
 									"name": "A10",
-									"type": "String"
+									"type": "Decimal"
 								}
 							},
 							{
@@ -588,7 +588,7 @@
 								},
 								"sink": {
 									"name": "A11",
-									"type": "String"
+									"type": "Int32"
 								}
 							},
 							{
@@ -608,7 +608,7 @@
 								},
 								"sink": {
 									"name": "A13",
-									"type": "String"
+									"type": "Decimal"
 								}
 							},
 							{
@@ -618,7 +618,7 @@
 								},
 								"sink": {
 									"name": "A14",
-									"type": "String"
+									"type": "Int32"
 								}
 							},
 							{
@@ -638,7 +638,7 @@
 								},
 								"sink": {
 									"name": "A16",
-									"type": "String"
+									"type": "Int32"
 								}
 							}
 						]

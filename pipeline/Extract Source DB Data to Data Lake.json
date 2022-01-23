@@ -224,7 +224,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "AzureSqlTable1",
+						"referenceName": "card",
 						"type": "DatasetReference"
 					}
 				],
@@ -328,6 +328,85 @@
 				"outputs": [
 					{
 						"referenceName": "clientcsv",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "Extract Client Data to Data Lake_copy1",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "Extract Client Data to Data Lake",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "AzureSqlSource",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "disp_id",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "disp_id",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "client_id",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "client_id",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "account_id",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "account_id",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "type",
+									"type": "String"
+								},
+								"sink": {
+									"name": "type",
+									"type": "String"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "disp",
 						"type": "DatasetReference"
 					}
 				]

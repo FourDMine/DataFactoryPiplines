@@ -357,6 +357,17 @@
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
+						}
+					},
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
@@ -364,49 +375,68 @@
 							{
 								"source": {
 									"name": "disp_id",
-									"type": "Int32"
+									"type": "Int32",
+									"physicalType": "int"
 								},
 								"sink": {
 									"name": "disp_id",
-									"type": "String"
+									"type": "String",
+									"physicalType": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "client_id",
-									"type": "Int32"
+									"type": "Int32",
+									"physicalType": "int"
 								},
 								"sink": {
 									"name": "client_id",
-									"type": "String"
+									"type": "String",
+									"physicalType": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "account_id",
-									"type": "Int32"
+									"type": "Int32",
+									"physicalType": "int"
 								},
 								"sink": {
 									"name": "account_id",
-									"type": "String"
+									"type": "String",
+									"physicalType": "String"
 								}
 							},
 							{
 								"source": {
 									"name": "type",
-									"type": "String"
+									"type": "String",
+									"physicalType": "varchar"
 								},
 								"sink": {
 									"name": "type",
-									"type": "String"
+									"type": "String",
+									"physicalType": "String"
 								}
 							}
-						]
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
 					}
 				},
 				"inputs": [
 					{
 						"referenceName": "disp",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "distcsv",
 						"type": "DatasetReference"
 					}
 				]

@@ -649,6 +649,12 @@
 						"referenceName": "district",
 						"type": "DatasetReference"
 					}
+				],
+				"outputs": [
+					{
+						"referenceName": "districtsv",
+						"type": "DatasetReference"
+					}
 				]
 			},
 			{

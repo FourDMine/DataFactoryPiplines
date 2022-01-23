@@ -1,5 +1,5 @@
 {
-	"name": "districsv",
+	"name": "districtsv",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "BankDataLake",

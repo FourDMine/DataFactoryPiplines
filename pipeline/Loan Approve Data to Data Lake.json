@@ -34,7 +34,7 @@
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
 							"quoteAllText": true,
-							"fileExtension": ".csv"
+							"fileExtension": ".txt"
 						}
 					},
 					"enableStaging": false,
@@ -68,7 +68,7 @@
 							{
 								"source": {
 									"name": "loan_amnt",
-									"type": "Decimal",
+									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
@@ -128,7 +128,7 @@
 							{
 								"source": {
 									"name": "installment",
-									"type": "Decimal",
+									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
@@ -200,7 +200,7 @@
 							{
 								"source": {
 									"name": "annual_inc",
-									"type": "Decimal",
+									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
@@ -320,7 +320,7 @@
 							{
 								"source": {
 									"name": "dti",
-									"type": "Decimal",
+									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
@@ -416,7 +416,7 @@
 							{
 								"source": {
 									"name": "open_acc",
-									"type": "Decimal",
+									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
@@ -428,7 +428,7 @@
 							{
 								"source": {
 									"name": "pub_rec",
-									"type": "Decimal",
+									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
@@ -440,7 +440,7 @@
 							{
 								"source": {
 									"name": "revol_bal",
-									"type": "Decimal",
+									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
@@ -464,7 +464,7 @@
 							{
 								"source": {
 									"name": "total_acc",
-									"type": "Decimal",
+									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
@@ -1088,7 +1088,7 @@
 							{
 								"source": {
 									"name": "mort_acc",
-									"type": "Decimal",
+									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
@@ -1340,7 +1340,7 @@
 							{
 								"source": {
 									"name": "pub_rec_bankruptcies",
-									"type": "Decimal",
+									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
@@ -1761,7 +1761,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "LoanApproveDataDL",
+						"referenceName": "LoanApprovalDataDL",
 						"type": "DatasetReference"
 					}
 				]

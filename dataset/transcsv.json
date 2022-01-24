@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "dbo.trans.csv",
 				"fileSystem": "outputfolder"
 			},
 			"columnDelimiter": ",",

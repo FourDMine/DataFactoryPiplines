@@ -986,9 +986,9 @@
 									"physicalType": "int"
 								},
 								"sink": {
+									"name": "trans_id",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 1
+									"physicalType": "String"
 								}
 							},
 							{
@@ -998,9 +998,9 @@
 									"physicalType": "int"
 								},
 								"sink": {
+									"name": "account_id",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 2
+									"physicalType": "String"
 								}
 							},
 							{
@@ -1010,9 +1010,9 @@
 									"physicalType": "date"
 								},
 								"sink": {
+									"name": "date",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 3
+									"physicalType": "String"
 								}
 							},
 							{
@@ -1022,9 +1022,9 @@
 									"physicalType": "varchar"
 								},
 								"sink": {
+									"name": "type",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 4
+									"physicalType": "String"
 								}
 							},
 							{
@@ -1034,9 +1034,9 @@
 									"physicalType": "varchar"
 								},
 								"sink": {
+									"name": "operation",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 5
+									"physicalType": "String"
 								}
 							},
 							{
@@ -1048,9 +1048,9 @@
 									"precision": 8
 								},
 								"sink": {
+									"name": "amount",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 6
+									"physicalType": "String"
 								}
 							},
 							{
@@ -1062,9 +1062,9 @@
 									"precision": 9
 								},
 								"sink": {
+									"name": "balance",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 7
+									"physicalType": "String"
 								}
 							},
 							{
@@ -1074,9 +1074,9 @@
 									"physicalType": "varchar"
 								},
 								"sink": {
+									"name": "k_symbol",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 8
+									"physicalType": "String"
 								}
 							},
 							{
@@ -1086,9 +1086,9 @@
 									"physicalType": "varchar"
 								},
 								"sink": {
+									"name": "bank",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 9
+									"physicalType": "String"
 								}
 							},
 							{
@@ -1098,9 +1098,9 @@
 									"physicalType": "int"
 								},
 								"sink": {
+									"name": "account",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 10
+									"physicalType": "String"
 								}
 							}
 						],

@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataflow": {
-						"referenceName": "TransData_DataFlow",
+						"referenceName": "DistrictData_DataFlow",
 						"type": "DataFlowReference"
 					},
 					"staging": {
@@ -92,7 +92,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataflow": {
-						"referenceName": "AccountData_DataFlow",
+						"referenceName": "LoanData_DataFlow",
 						"type": "DataFlowReference"
 					},
 					"staging": {
@@ -168,7 +168,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataflow": {
-						"referenceName": "ClientData_DataFlow",
+						"referenceName": "DispData_DataFlow",
 						"type": "DataFlowReference"
 					},
 					"staging": {

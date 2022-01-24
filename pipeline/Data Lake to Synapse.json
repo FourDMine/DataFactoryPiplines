@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataflow": {
-						"referenceName": "DispData_DataFlow",
+						"referenceName": "OrderData_DataFlow",
 						"type": "DataFlowReference"
 					},
 					"staging": {

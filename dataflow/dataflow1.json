@@ -15,7 +15,7 @@
 			"sinks": [
 				{
 					"dataset": {
-						"referenceName": "LoanApprovalDataDL",
+						"referenceName": "LoanApprovalDL",
 						"type": "DatasetReference"
 					},
 					"name": "sink1"
